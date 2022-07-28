@@ -1,0 +1,30 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "author": "hanjeahwan@gmail.com",
+  "description": "web crawler",
+  "private": true,
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:prod": "node dist/main.js",
+    "serve": " nodemon",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^2.1.1",
+    "puppeteer-core": "^15.5.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.17",
+    "@types/node": "^13.13.52",
+    "@types/puppeteer": "^2.0.1",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.8.2",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  }
+}
